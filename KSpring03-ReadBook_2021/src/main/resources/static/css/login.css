@@ -1,0 +1,11 @@
+button.login {
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: bold;
+}
+
+div.input label {
+    width: 100px;
+}
+

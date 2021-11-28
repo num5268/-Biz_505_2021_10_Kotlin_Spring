@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{/layout}"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mypage</title>
+</head>
+<body>
+<section layout:fragment="content" class="content">
+    <h1>MY PAGE</h1>
+    <p>로그인한 사용자만 볼수 있음</p>
+    <div class="mypage" th:each="USER: ${USER}">
+        <div class="input"><label>아이디</label><input th:value="${USER.username}" /></div>
+        <div class="input"><label>패스워드</label><input type="password" th:value="${USER.password}"/></div>
+    </div>
+
+    <form method="post" th:action="@{/logout}">
+        <button class="logout">로그아웃</button>
+    </form>
+</section>
+</body>
+</html>
+

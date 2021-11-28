@@ -1,0 +1,1 @@
+# Java Config type Spring Project

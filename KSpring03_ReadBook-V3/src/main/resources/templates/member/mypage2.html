@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko"
+    xmlns:layout="http://ultraq.net.nz/thymeleaf/layout"
+    layout:decorator="~{/layout}"
+>
+<section layout:fragment="content" class="content">
+    <h1>MY PAGE</h1>
+    <fieldset>
+        <div class="btn_log">
+            <form method="POST" th:action="@{/logout}" class="logout_form">
+                <a href="http://localhost:8080/readbook/insert" id="btn_write">독서록 작성하기</a>
+                <button class="btn_logout">로그아웃</button>
+            </form>
+        </div>
+    </fieldset>
+</section>
+</html>

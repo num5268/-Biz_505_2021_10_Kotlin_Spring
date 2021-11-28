@@ -1,0 +1,58 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+form fieldset {
+    border-radius: 5px;
+}
+form legend {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+form input {
+    padding: 0.5rem;
+}
+form div {
+    margin: 0.5rem;
+}
+div.input {
+    margin: 10px auto;
+    width: 80%;
+}
+div.input input, div.input label {
+    display: table;
+    padding: 8px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.input input {
+
+    border: 1px solid #ddd;
+    outline: 0;
+    border-radius: 5px;
+}
+div.input label {
+    text-align: right;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+div.btn_box {
+    text-align: right;
+    justify-content: right;
+    width: 89%;
+}
+button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #414141;
+}
+button:hover {
+    cursor: pointer;
+}

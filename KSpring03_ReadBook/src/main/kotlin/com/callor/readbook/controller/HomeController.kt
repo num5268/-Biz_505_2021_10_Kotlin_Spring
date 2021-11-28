@@ -9,10 +9,15 @@ import org.springframework.web.bind.annotation.ResponseBody
 @Controller
 class HomeController {
 
-    @ResponseBody
+
     @RequestMapping(value=["/",""],method=[RequestMethod.GET])
     fun home() : String {
-        return "반갑습니다~~~"
+        return "redirect:/insert"
     }
+    @RequestMapping(value = ["/insert"],method = [RequestMethod.GET])
+    fun insert() : String {
+        return "readbook/write.html"
+    }
+
 
 }
